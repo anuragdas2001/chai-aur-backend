@@ -15,6 +15,9 @@ app.get("/chai",(req,res)=>{
     res.send("<h2>Chai aur code</h2>")
 })
 
+app.get("/github",(req,res)=>{
+    res.json({name:"Anurag Das"}); 
+})
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`);
 });
